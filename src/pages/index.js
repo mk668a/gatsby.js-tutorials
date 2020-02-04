@@ -8,7 +8,6 @@ export default () => (
             <Link to='/about'>About</Link>
             <Link to='/about-css-modules'>About CSS MODULES</Link>
             <Link to='/contact'>contact</Link>
-            <Link to='/container'>container</Link>
         </div>
     </div>
 )

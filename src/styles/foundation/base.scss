@@ -1,5 +1,19 @@
 body {
   background-color: #c3c3c3;
+  margin: 3rem;
+
+  h1 {
+    font-size: 5rem;
+  }
+
+  h2 {
+    font-size: 4rem;
+  }
+
+  a,
+  p {
+    font-size: 1.5rem;
+  }
 
   .flex-column {
     display: flex;

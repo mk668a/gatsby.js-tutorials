@@ -4,8 +4,10 @@ import Header from "../components/header"
 
 export default () => (
     <div style={{ color: `teal` }}>
-        <Link to="/">Home</Link>
-        <Link to="/contact">Contact</Link>
+        <div className="flex-column">
+            <Link to="/">Home</Link>
+            <Link to="/contact">Contact</Link>
+        </div>
         <Header headerText="About Gatsby" />
         <Header headerText="It's pretty cool" />
         <h1>About Gatsby</h1>
