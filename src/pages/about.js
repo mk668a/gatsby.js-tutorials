@@ -16,13 +16,6 @@ export const query = graphql`
 
 export default ({ data }) => (
     <div style={{ color: `teal` }}>
-        <Layout>
-            <h1>About {data.site.siteMetadata.title}</h1>
-            <p>
-                We're the only site running on your computer dedicated to showing the best
-                photos and videos of pandas eating lots of food.
-    </p>
-        </Layout>
         <div className="flex-column">
             <Link to="/">Home</Link>
             <Link to="/contact">Contact</Link>
@@ -31,5 +24,13 @@ export default ({ data }) => (
         <Header headerText="It's pretty cool" />
         <h1>About Gatsby</h1>
         <p>Such wow. Very React.</p>
+
+        <Layout>
+            <h1>About {data.site.siteMetadata.title}</h1>
+            <p>
+                We're the only site running on your computer dedicated to showing the best
+                photos and videos of pandas eating lots of food.
+    </p>
+        </Layout>
     </div>
 )
