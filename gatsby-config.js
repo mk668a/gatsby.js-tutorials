@@ -10,6 +10,7 @@ module.exports = {
     title: `Pandas Eating Lots`,
   },
   plugins: [
+    `gatsby-transformer-remark`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
