@@ -4,8 +4,8 @@ import { useStaticQuery, Link, graphql } from "gatsby"
 import { rhythm } from "../utils/typography"
 
 export default ({ children }) => {
-    const data = useStaticQuery(
-        graphql`
+  const data = useStaticQuery(
+    graphql`
       query {
         site {
           siteMetadata {
@@ -14,31 +14,31 @@ export default ({ children }) => {
         }
       }
     `
-    )
-    return (
+  )
+  return (
 
-        <div css={css`
+    <div css={css`
         background: #fff;
         margin: 2rem auto;
         max-width: 700px;
         padding: ${rhythm(2)};
         padding-top: ${rhythm(1.5)};
     `}>
-            <Link to={`/`}>
-                <h3 css={css`
+      <Link to={`/`}>
+        <h3 css={css`
           margin-bottom: ${rhythm(2)};
           display: inline-block;
           font-style: normal;
         `}>{data.site.siteMetadata.title}</h3>
-            </Link>
+      </Link>
 
-            <Link
-                to={`/about/`}
-                css={css`
+      <Link
+        to={`/`}
+        css={css`
         float: right;
-      `}>About</Link>
+      `}>HOME</Link>
 
-            {children}
-        </div>
-    )
+      {children}
+    </div>
+  )
 }

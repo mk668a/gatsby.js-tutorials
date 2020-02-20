@@ -9,6 +9,8 @@ export default () => (
             <Link to='/about'>About</Link>
             <Link to='/about-css-modules'>About CSS MODULES</Link>
             <Link to='/contact'>contact</Link>
+            <Link to='/mark-down'>mark-down</Link>
+            <Link to='/my-files'>my-files</Link>
         </div>
         <Layout>
             <h1>Amazing Pandas Eating Things</h1>

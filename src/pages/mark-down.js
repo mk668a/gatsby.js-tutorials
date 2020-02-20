@@ -3,6 +3,7 @@ import { css } from "@emotion/core"
 import { Link, graphql } from "gatsby"
 import { rhythm } from "../utils/typography"
 import Layout from "../components/layout"
+import "../styles/Layout/mark-down.scss"
 
 export default ({ data }) => {
     return (
@@ -18,7 +19,7 @@ export default ({ data }) => {
         </h1>
                 <h4>{data.allMarkdownRemark.totalCount} Posts</h4>
                 {data.allMarkdownRemark.edges.map(({ node }) => (
-                    <div key={node.id}>
+                    <div key={node.id} className="section">
                         <Link
                             to={node.fields.slug}
                             css={css`
