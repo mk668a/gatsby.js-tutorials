@@ -9,6 +9,8 @@ export default {
 
 export const Text = () => <Button onClick={action('clicked')}>Hello Button</Button>;
 
+export const Hover_Button = () => <Button onClick={action('clicked')}>Hover_Button</Button>;
+
 export const Emoji = () => (
   <Button onClick={action('clicked')}>
     <span role="img" aria-label="so cool">
